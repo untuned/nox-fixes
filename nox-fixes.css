@@ -1,76 +1,89 @@
+/* My settings */
+:root {
+	--nox-accent: #2de2e6 !important;
+	--nox-notification-color: #ff6c11 !important;
+	--nox-notification-width: 2px !important;
+	--nox-important-notification: #fd1d53 !important;
+	--nox-channels-scrollbar: initial !important;
+	--nox-settings-scrollbar: initial !important;
+	--nox-settings-time: 500ms !important;
+	--nox-level1: #251647 !important;
+	--nox-level2: #231834 !important;
+	--nox-level3: #0c0321 !important;
+}
+
 /* Removes 7px jump downwards whilst moving guilds */
-.guilds-1q_RqH
-.guildPlaceholder-1ioaid {
-    padding-right:70px!important;
-    margin-top:0!important;
+.guilds-1q_RqH .guildPlaceholder-1ioaid {
+	padding-right: 70px!important;
+	margin-top: 0!important;
 }
 
 /* Fixes double arrow within notification settings on servers */
-.theme-dark .select-2TCrqx .Select-control .Select-arrow{
-    border-color:transparent!important;
+.theme-dark .select-2TCrqx .Select-control .Select-arrow {
+	border-color: transparent!important;
 }
 
 /* Offcentre Button fix within area where your user stuffs is + voice */
 .container-2Thooq .horizontal-1ae9ci .button-2b6hmh:after,
 .container-1UB9sr .horizontal-1ae9ci .button-2KyEfG:after {
-    left: calc(50% + 0px)!important;
+	left: calc(50% + 0px)!important;
 }
 
 /* Carrot Colour Fix (Connection Info Popout) */
-.theme-dark .popout-2GtBL-:after{ 
-    border-top-color:var(--nox-level2);
+.theme-dark .popout-2GtBL-:after {
+	border-top-color: var(--nox-level2);
 }
 
 .theme-dark .grandfatheredMessage-1BnHtv {
-    background: var(--nox-accent);
+	background: var(--nox-accent);
 }
 
 /* Removes background on Mute button and Voice Info buttons */
 .theme-dark .button-2b6hmh:hover,
 .theme-light .button-2b6hmh:hover,
 .theme-dark .button-2KyEfG:hover,
-.theme-light .button-2KyEfG:hover{
-    background-color:transparent!important;
+.theme-light .button-2KyEfG:hover {
+	background-color: transparent!important;
 }
 
 /* Fixes the miss-aligned crosses on the active mute and deafen button */
 .container-2Thooq .horizontal-1ae9ci div button[style='background-image: url("/assets/896770bf2d6ed0358ed0adefdbe96a24.svg");']:before {
-    content: "";
-    display: block;
-    height: 4px;
-    background: linear-gradient(to top, var(--nox-white) 0%, var(--nox-white) 50%, var(--nox-level3) 51%, var(--nox-level3) 100%);
-    width: 18px;
-    position: absolute;
-    transform: translate(6px, 14.5px) rotate(45deg) translate(0, -2px) scale(1, 1);
-    top: 0;
-    left: 0;
-    animation: strike-in 300ms cubic-bezier(0, 0, 0, 1);
+	content: "";
+	display: block;
+	height: 4px;
+	background: linear-gradient(to top, var(--nox-white) 0%, var(--nox-white) 50%, var(--nox-level3) 51%, var(--nox-level3) 100%);
+	width: 18px;
+	position: absolute;
+	transform: translate(6px, 14.5px) rotate(45deg) translate(0, -2px) scale(1, 1);
+	top: 0;
+	left: 0;
+	animation: strike-in 300ms cubic-bezier(0, 0, 0, 1);
 }
 
 .container-2Thooq .horizontal-1ae9ci div button[style='background-image: url("/assets/c8845c514bbf3f1e5bea064c1e40b08d.svg");']:before {
-    content: "";
-    display: block;
-    height: 4px;
-    background: linear-gradient(to top, var(--nox-white) 0%, var(--nox-white) 50%, var(--nox-level3) 51%, var(--nox-level3) 100%);
-    width: 18.5px;
-    position: absolute;
-    transform: translate(6px, 14.5px) rotate(45deg) translate(0, -2px) scale(1, 1);
-    top: 0;
-    left: 0;
-    animation: strike-in 300ms cubic-bezier(0, 0, 0, 1);
+	content: "";
+	display: block;
+	height: 4px;
+	background: linear-gradient(to top, var(--nox-white) 0%, var(--nox-white) 50%, var(--nox-level3) 51%, var(--nox-level3) 100%);
+	width: 18.5px;
+	position: absolute;
+	transform: translate(6px, 14.5px) rotate(45deg) translate(0, -2px) scale(1, 1);
+	top: 0;
+	left: 0;
+	animation: strike-in 300ms cubic-bezier(0, 0, 0, 1);
 }
 
 /* Fixes Online Status Selector on Linux */
-.platform-linux .container-2Thooq .inner-1W0Bkn + .status-oxiHuE::before {
-    left: 0;
+.platform-linux .container-2Thooq .inner-1W0Bkn+.status-oxiHuE::before {
+	left: 0;
 }
 
 /* Payment Method */
 .theme-dark .codeRedemptionRedirect-1wVR4b {
-    background-color: #292929;
-    border-color: #292929;
-    color: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.03);
+	background-color: #292929;
+	border-color: #292929;
+	color: #fff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
 /* Billing - Transaction History */
@@ -79,15 +92,15 @@
 .theme-dark .expandedInfo-3kfShd,
 .theme-dark .paginator-2CA79G,
 .pageActions-1SVAnA {
-    background: var(--nox-level2);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.03) inset;
-    border-radius: 3px;
-    border-color: rgba(114,118,125,.3);
+	background: var(--nox-level2);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.03) inset;
+	border-radius: 3px;
+	border-color: rgba(114, 118, 125, .3);
 }
 
 .theme-dark .hoverablePayment-Yc6mK7:hover {
-    transition: background-color 100ms ease;
-    background-color: var(--nox-level1);
+	transition: background-color 100ms ease;
+	background-color: var(--nox-level1);
 }
 
 /* Themes Billing Tab */
@@ -95,84 +108,94 @@
 .theme-dark .paginator-166-09,
 .theme-dark .payment-xT17Mq,
 .theme-dark .codeRedemptionRedirect-1wVR4b,
-.paymentHistory-2FXzro{
-    background-color:#292929!important;
+.paymentHistory-2FXzro {
+	background-color: #292929!important;
 }
-.theme-dark .paymentRow-2e7VM6{
-    border-color:rgba(255, 255, 255, 0.04) !important;
+
+.theme-dark .paymentRow-2e7VM6 {
+	border-color: rgba(255, 255, 255, 0.04) !important;
 }
+
 .top-28JiJ- .itemSelected-1qLhcL.item-PXvHYJ:first-of-type,
-.top-28JiJ- .itemDefault-3Jdr52.item-PXvHYJ:first-of-type{
-    background:transparent!important;
+.top-28JiJ- .itemDefault-3Jdr52.item-PXvHYJ:first-of-type {
+	background: transparent!important;
 }
+
 .theme-dark .paymentHistory-2FXzro,
-.theme-dark .codeRedemptionRedirect-1wVR4b{
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.03) inset;
+.theme-dark .codeRedemptionRedirect-1wVR4b {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.03) inset;
 }
-.paymentHistory-2FXzro{
-    border-radius:3px;
+
+.paymentHistory-2FXzro {
+	border-radius: 3px;
 }
-.paymentHistory-2FXzro .title-3sZWYQ{
-    padding-left:15px; 
-    padding-top:15px;
+
+.paymentHistory-2FXzro .title-3sZWYQ {
+	padding-left: 15px;
+	padding-top: 15px;
 }
-.paymentHistory-2FXzro .top-28JiJ-{
-    padding-left:15px;
+
+.paymentHistory-2FXzro .top-28JiJ- {
+	padding-left: 15px;
 }
+
 .theme-dark .pageIndicator-1gAbyA,
 .theme-dark .pageButtonNext-V2kUq0,
-.theme-dark .pageButtonPrev-1Y-47D{
-    border:none!important;
+.theme-dark .pageButtonPrev-1Y-47D {
+	border: none!important;
 }
-.theme-dark .expandedInfo-3kfShd{
-    background-color:#303030;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.03) inset;
+
+.theme-dark .expandedInfo-3kfShd {
+	background-color: #303030;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.03) inset;
 }
-/*Billing Buttons*/
+
+/* Billing Buttons */
 .theme-dark .pageButtonNext-V2kUq0,
-.theme-dark .pageButtonPrev-1Y-47D{
-    transition: all 200ms ease;
-    border-radius:50%!important;
+.theme-dark .pageButtonPrev-1Y-47D {
+	transition: all 200ms ease;
+	border-radius: 50%!important;
 }
+
 .theme-dark .pageButtonNext-V2kUq0:hover,
-.theme-dark .pageButtonPrev-1Y-47D:hover{
-    background-color:#3a3a3a;
-    color:#fff;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    transform: translate(0, -1px);
-    transition: all 100ms ease, transform 150ms cubic-bezier(0, 0, 0, 1);
+.theme-dark .pageButtonPrev-1Y-47D:hover {
+	background-color: #3a3a3a;
+	color: #fff;
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+	transform: translate(0, -1px);
+	transition: all 100ms ease, transform 150ms cubic-bezier(0, 0, 0, 1);
 }
+
 .theme-dark .pageButtonNext-V2kUq0:active,
-.theme-dark .pageButtonPrev-1Y-47D:active{
-    background: gainsboro;
-    color: rgba(0, 0, 0, 0.7);
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
-    transform: translate(0, 2px);
-    transition: all 50ms ease;
+.theme-dark .pageButtonPrev-1Y-47D:active {
+	background: gainsboro;
+	color: rgba(0, 0, 0, 0.7);
+	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+	transform: translate(0, 2px);
+	transition: all 50ms ease;
 }
 
 /* Library Tab Fix v2 (Fixes Depth Shadow) */
 .theme-dark .gameUpdates-2GPqBU {
-    background-color: var(--nox-level3)!important;
+	background-color: var(--nox-level3)!important;
 }
-.theme-dark .headerBar-UHpsPw{
-    --webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4)!important;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4)!important;
+
+.theme-dark .headerBar-UHpsPw {
+	--webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4)!important;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4)!important;
 }
 
 /* Mic Test Button Overflow Fix */
-.micTestButton-3lpP11{
-    width:106px!important;
+.micTestButton-3lpP11 {
+	width: 106px!important;
 }
-.userSettingsVoice-iwdUCU
-.flex-1xMQg5:nth-of-type(3)
-.container-3PXSwK{
-    width:100%!important
+
+.userSettingsVoice-iwdUCU .flex-1xMQg5:nth-of-type(3) .container-3PXSwK {
+	width: 100%!important
 }
-.userSettingsVoice-iwdUCU
-.flex-1xMQg5:nth-of-type(3)
-.description-3_Ncsb:nth-of-type(2){
-    display:none;
+
+.userSettingsVoice-iwdUCU .flex-1xMQg5:nth-of-type(3) .description-3_Ncsb:nth-of-type(2) {
+	display: none;
 }
 
 /* Sets Background Colour for Connected Voice on :active, Probably more too, laziest fix out there */
@@ -180,5 +203,5 @@
 .contentHoveredText-2D9B-x,
 .contentHoveredVoice-3p_NEO:active,
 .contentSelectedVoice-1WDIBM:active {
-    background-color: #2c2c2c!important;
+	background-color: #2c2c2c!important;
 }
